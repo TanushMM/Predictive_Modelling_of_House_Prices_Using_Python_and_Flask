@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predictive model of House Prices</title>
+    <link rel="stylesheet" href="../static/Artifacts/styles.css">
+  </head>
+  <body>
+    <div class="container">
+    <h1>House Price Prediction using Machine Learning</h1>
+    <h1>Developed by Tanush M M</h1>
+
+    <form action="/prediction" method="post" target="_blank">
+      <label for="area">Area</label>
+      <input type="number" name="area" id="area">
+      
+      <label for="bedrooms">Number of bedrooms</label>
+      <select id="bedrooms" name="bedrooms">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+      <label for="bathrooms">Number of bathrooms</label>
+      <select id="bathrooms" name="bathrooms">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+      <label for="bedrooms">Number of bathrooms</label>
+      <select id="bathrooms" name="bathrooms">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </select>
+    <label for="stories">Number of stories</label>
+    <select id="stories" name="stories">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+
+    <label for="mainroad">Is the house Adjacent to a mainroad</label>
+    <select id="mainroad" name="mainroad">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+
+    <label for="guestroom">Does the house have guestroom</label>
+    <select id="guestroom" name="guestroom">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+
+    <label for="basement">Does the house have basement</label>
+    <select id="basement" name="basement">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+
+    <label for="hotwaterheating">Does the house have water heating provision</label>
+    <select id="hotwaterheating" name="hotwaterheating">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+
+    <label for="airconditioning">Does the house have A/C</label>
+    <select id="airconditioning" name="airconditioning">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+
+    <label for="parking">Number of parking spaces</label>
+    <select id="parking" name="parking">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+
+    <label for="prefarea">Is the house present in the Most Preferred Area</label>
+    <select id="prefarea" name="prefarea">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+
+    <label for="furnishingstatus">Furnishing status</label>
+    <select id="furnishingstatus" name="furnishingstatus">
+        <option value="furnished">furnished</option>
+        <option value="semi-furnished">semi-furnished</option>
+        <option value="unfurnished">unfurnished</option>
+    </select>
+
+    <button type="submit" value="Submit" class="btn">Predict</button>
+    </form>
+  </div>
+  </body>
+</html>

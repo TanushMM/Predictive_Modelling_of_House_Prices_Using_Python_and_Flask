@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predictive model of House Prices</title>
+    <style>
+      body {
+        background-color: #121212;
+        color: #e0e0e0;
+        font-family: "Arial", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: "top";
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        background: #1e1e1e;
+        padding: 20px 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        animation: fadeIn 2s ease-in-out;
+        justify-content: center;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>House Price Prediction using Machine Learning</h1>
+      <h1>Developed by Tanush M M</h1>
+      <br />
+      <h2>Input Parameters</h2>
+      <p><b>Area:</b> {{ input_data.iloc[0, 0] }}</p>
+      <p><b>Bedrooms:</b> {{ input_data.iloc[0, 1] }}</p>
+      <p><b>Bathrooms:</b> {{ input_data.iloc[0, 2] }}</p>
+      <p><b>Stories/Floors:</b> {{ input_data.iloc[0, 3] }}</p>
+      <p><b>Mainroad:</b> {{ input_data.iloc[0, 4] }}</p>
+      <p><b>Guestrooms:</b> {{ input_data.iloc[0, 5] }}</p>
+      <p><b>Basement:</b> {{ input_data.iloc[0, 6] }}</p>
+      <p><b>Hot water heating:</b> {{ input_data.iloc[0, 7] }}</p>
+      <p><b>Air Conditioning:</b> {{ input_data.iloc[0, 8] }}</p>
+      <p><b>Parking:</b> {{ input_data.iloc[0, 9] }}</p>
+      <p><b>Prefered Area:</b> {{ input_data.iloc[0, 10] }}</p>
+      <p><b>Status of House Furnish:</b> {{ input_data.iloc[0, 11] }}</p>
+      <h2>Predicted Price of the House is {{ pred_value[0] }}</h2>
+    </div>
+  </body>
+</html>
