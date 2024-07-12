@@ -69,7 +69,9 @@ class PredictionPipeline:
 
 
 
-app = Flask(__name__)
+application = Flask(__name__)
+
+app = application
 
 @app.route('/', methods=['GET'])
 def home():
@@ -101,4 +103,4 @@ def prediction():
     return render_template('prediction.html', pred_value=pred_value, input_data=house_data)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0")
